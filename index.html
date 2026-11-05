@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Importadora Italia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { min-height: 100%; }
+body {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url("fondo.png") center 80% / max(100vw, 120vh) auto no-repeat fixed;
+}
+@media (min-width: 900px) {
+  body { background-position: center 45%; }
+}
+main {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.logo {
+  width: 190px;
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.25));
+}
+.boton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.boton:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.25); }
+.boton:focus-visible { outline: 3px solid #111; outline-offset: 3px; }
+.boton svg { width: 36px; height: 36px; flex: none; }
+.boton span { flex: 1; text-align: center; padding-right: 36px; }
+@media (prefers-reduced-motion: reduce) {
+  .boton { transition: none; }
+}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo importadora.png" alt="Importadora Italia">
+
+  <a class="boton" href="https://www.instagram.com/importadora_italia?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+    </svg>
+    <span>Seguinos en nuestro instagram</span>
+  </a>
+
+  <a class="boton" href="https://www.tiktok.com/@importadora_italia?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M16.6 3c.3 2.3 1.7 3.9 3.9 4.1v3c-1.4.1-2.7-.4-3.9-1.1v6.2c0 5.2-5.6 7-8.6 3.8-2-2.2-1.6-6 1.1-7.6.9-.5 1.9-.7 2.9-.6v3.1c-.5-.2-1-.2-1.5 0-1.5.6-1.8 2.7-.5 3.6 1.4 1 3.2 0 3.2-1.7V3h3.4z"/>
+    </svg>
+    <span>Seguinos en nuestro tiktok</span>
+  </a>
+
+  <a class="boton" href="https://whatsapp.com/channel/0029VabT77DEFeXd7yQ4nm1X" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.5L3 21z"/>
+      <path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2L9 8.5z" fill="currentColor" stroke="none"/>
+    </svg>
+    <span>Unite a nuestro canal</span>
+  </a>
+
+  <a class="boton" href="https://wa.me/5491126665251?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.5L3 21z"/>
+      <path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2L9 8.5z" fill="currentColor" stroke="none"/>
+    </svg>
+    <span>Escribinos y hacé tu pedido</span>
+  </a>
+</main>
+</body>
+</html>
